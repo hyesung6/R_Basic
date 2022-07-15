@@ -24,3 +24,12 @@ cor(iris[, 1:4])
 
 # 상관행렬 히트맵 : 변수가 많아서 눈으로 보기 어려운 경우
 heatmap(cor(iris[, 1:4]))
+
+# boxplot
+boxplot(iris)
+
+# plot : x y 좌표상의 점으로 시각화
+plot(iris)
+
+# head() : 벡터, 매트릭스, 테이블, 데이터프레임을 6라인까지 출력
+head(iris)
