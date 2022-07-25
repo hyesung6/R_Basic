@@ -6,6 +6,7 @@ A_salary <- c(25, 28, 50, 60, 30 , 35, 40, 70, 40 ,70, 40, 100, 30, 30)
 A_hireyears <- c(1, 1, 5, 6 ,3, 3, 4, 7, 4, 7, 4, 10, 3, 3)
 A <- data.frame(salary <- A_salary,
                 hireyears <- A_hireyears)
+
 plot(A$hireyears, A$salary, xlab = "근무년수", ylab = "연봉(백만원단위)")
 
 # pairs() : 여러 변수의 산점도 그래프를 한 눈에 볼 수 있게 작성
@@ -33,3 +34,12 @@ plot(iris)
 
 # head() : 벡터, 매트릭스, 테이블, 데이터프레임을 6라인까지 출력
 head(iris)
+
+# barplot(빈도값 벡터) 
+barplot(A_hireyears, xlab = "Value", ylab = "Count")
+
+# mosaicplot(행렬) -> 분할표 그림
+mosaicplot(A)
+
+# stars(행렬) -> 스타차트
+stars(A)
