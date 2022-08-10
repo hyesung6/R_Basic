@@ -25,3 +25,9 @@ if ( bread > 20) {
 } else {
   print('Not enough for today')  
 }
+
+if ( bread > 50) {
+  print('You sold a lot!')
+} else {
+  print('Not enough for today')  
+}
